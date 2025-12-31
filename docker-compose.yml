@@ -1,0 +1,23 @@
+version: '3.9'
+
+services:
+  next_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: next_app
+    restart: always
+    expose:
+      - "3000"
+    environment:
+      - DB_HOST=${DB_HOST}
+      - DB_USER=${DB_USER}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_NAME=${DB_NAME}
+    env_file:
+      - .env
+
+networks:
+  default:
+    name: osm_shared_network
+    external: true
