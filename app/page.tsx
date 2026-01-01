@@ -7,10 +7,15 @@ import ResultsTable from '@/components/ResultsTable';
 import QRScanner from '@/components/QRScanner';
 import { useLenses } from '@/hooks/useLenses';
 import { FilterState } from '@/types';
-import { AlertCircle, Loader2, Upload } from 'lucide-react';
+import { AlertCircle, Loader2, } from 'lucide-react';
+import { translations, Language } from '@/lib/translations';
+
+
+
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+  const [language, setLanguage] = useState<Language>('en');
   const [isScannerOpen, setIsScannerOpen] = useState(false);
   const { lenses, categories, loading, error, fetchCategories, searchLenses, uploadCSV } = useLenses();
 
@@ -23,8 +28,7 @@ export default function Home() {
     search: '',
   });
 
-  const [uploading, setUploading] = useState(false);
-  const [uploadMsg, setUploadMsg] = useState('');
+  const t = translations[language];
 
   useEffect(() => {
     fetchCategories();
@@ -57,47 +61,27 @@ export default function Home() {
     searchLenses(filters);
   };
 
-  const handleFileUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    if (e.target.files && e.target.files[0]) {
-      setUploading(true);
-      setUploadMsg('');
-      try {
-        const res = await uploadCSV(e.target.files[0]);
-        setUploadMsg(res.message || 'Upload successful');
-        // Refresh categories
-        fetchCategories();
-      } catch (err: any) {
-        setUploadMsg('Error: ' + err.message);
-      } finally {
-        setUploading(false);
-      }
-    }
-  };
-
   return (
-    <div className={`min-h-screen ${darkMode ? 'dark' : ''} bg-slate-50 dark:bg-slate-950`}>
-      <Header darkMode={darkMode} toggleDarkMode={() => setDarkMode(!darkMode)} />
+    <div className={`min-h-screen ${darkMode ? 'dark' : ''} bg-slate-50 dark:bg-slate-950`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
+      <Header
+        darkMode={darkMode}
+        toggleDarkMode={() => setDarkMode(!darkMode)}
+        language={language}
+        setLanguage={setLanguage}
+      />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
         <section className="space-y-2 flex justify-between items-end">
           <div>
             <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Find the Perfect Lens
+              {t.title}
             </h2>
             <p className="text-slate-500 dark:text-slate-400 max-w-2xl">
-              Enter the prescription details or scan the lens package QR code to quickly filter available stock.
+              {t.subtitle}
             </p>
           </div>
 
-          <div className="flex flex-col items-end">
-            <label className="cursor-pointer flex items-center gap-2 text-sm text-blue-600 hover:text-blue-700 font-medium bg-blue-50 dark:bg-blue-900/20 px-4 py-2 rounded-lg transition-colors">
-              <Upload className="w-4 h-4" />
-              Import CSV Data
-              <input type="file" accept=".csv" onChange={handleFileUpload} className="hidden" />
-            </label>
-            {uploading && <span className="text-xs text-slate-500 mt-1">Uploading...</span>}
-            {uploadMsg && <span className={`text-xs mt-1 ${uploadMsg.startsWith('Error') ? 'text-red-500' : 'text-green-500'}`}>{uploadMsg}</span>}
-          </div>
+
         </section>
 
         {error && (
@@ -114,31 +98,27 @@ export default function Home() {
           subCategories={categories.subCategories}
           onOpenScanner={() => setIsScannerOpen(true)}
           onSearch={handleSearch}
+          t={t}
         />
 
         {loading ? (
           <div className="flex flex-col items-center justify-center py-24 space-y-4">
             <Loader2 className="w-12 h-12 text-blue-600 animate-spin" />
-            <p className="text-slate-500 font-medium">Searching lens database...</p>
+            <p className="text-slate-500 font-medium">{t.loading}</p>
           </div>
         ) : (
           <div className="space-y-4">
             <div className="flex items-center justify-between px-2">
               <h3 className="text-lg font-bold text-slate-900 dark:text-white">
-                Available Lenses ({lenses.length})
+                {t.availableLenses} ({lenses.length})
               </h3>
               {filters.discount > 0 && (
                 <span className="bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                  {filters.discount}% Discount Applied
+                  {filters.discount}% {t.discountApplied}
                 </span>
               )}
             </div>
-            <ResultsTable lenses={lenses} discount={filters.discount} />
-            {lenses.length === 0 && !loading && !error && (
-              <div className="text-center py-12 text-slate-500 dark:text-slate-400">
-                No lenses found. Adjust filters and click Search.
-              </div>
-            )}
+            <ResultsTable lenses={lenses} discount={filters.discount} t={t} />
           </div>
         )}
       </main>
@@ -153,10 +133,10 @@ export default function Home() {
       <footer className="py-12 px-4 border-t border-slate-200 dark:border-slate-800 mt-auto">
         <div className="max-w-7xl mx-auto text-center space-y-4">
           <p className="text-sm text-slate-500 dark:text-slate-400 italic">
-            "Precision in every view. Clarity in every frame."
+            {t.footerQuote}
           </p>
           <p className="text-xs text-slate-400 dark:text-slate-600">
-            &copy; {new Date().getFullYear()} OptiLens Pro. All rights reserved.
+            &copy; {new Date().getFullYear()} {t.rightsReserved}
           </p>
         </div>
       </footer>

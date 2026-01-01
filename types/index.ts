@@ -5,6 +5,8 @@ export interface Lens {
     PRICE: number;
     MAINCATEGORY: string;
     SUBCATEGORY: string;
+    MAINCATEGORYEN: string;
+    SUBCATEGORYEN: string;
     DIAMETER: number;
     QRCODE: string;
 }

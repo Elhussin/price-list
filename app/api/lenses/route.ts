@@ -45,7 +45,9 @@ export async function GET(request: Request) {
             MAINCATEGORY: row.main_category,
             SUBCATEGORY: row.sub_category,
             DIAMETER: parseFloat(row.diameter),
-            QRCODE: row.qr_code
+            QRCODE: row.qr_code,
+            MAINCATEGORYEN: row.MAINCATEGORYEN,
+            SUBCATEGORYEN: row.SUBCATEGORYEN,
         }));
 
         return NextResponse.json(formattedRows);

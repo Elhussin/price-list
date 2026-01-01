@@ -1,8 +1,9 @@
 import React from 'react';
-import { Search, Percent, QrCode } from 'lucide-react';
+import { Search, Percent, Layers, Glasses, FileSearch } from 'lucide-react';
 import PowerInputs from './PowerInputs';
 import CategorySelect from './CategorySelect';
 import { FilterState } from '@/types';
+import { translations } from '@/lib/translations';
 
 interface InputFormProps {
     filters: FilterState;
@@ -11,6 +12,7 @@ interface InputFormProps {
     subCategories: string[];
     onOpenScanner: () => void;
     onSearch: () => void;
+    t: typeof translations.en;
 }
 
 const InputForm: React.FC<InputFormProps> = ({
@@ -18,46 +20,73 @@ const InputForm: React.FC<InputFormProps> = ({
     setFilters,
     mainCategories,
     subCategories,
-    onOpenScanner,
-    onSearch
+    // onOpenScanner, // Reserved for future use
+    onSearch,
+    t
 }) => {
-    const updateFilter = (key: keyof FilterState, value: any) => {
+    const updateFilter = (key: keyof FilterState, value: string | number) => {
         setFilters(prev => ({ ...prev, [key]: value }));
     };
 
     return (
-        <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200 dark:border-slate-800 p-6 space-y-6 transition-colors">
-            <div className="flex flex-col md:flex-row md:items-end gap-6">
-                <div className="flex-1 space-y-6">
-                    <PowerInputs
-                        sph={filters.sph}
-                        cyl={filters.cyl}
-                        onSphChange={(val) => updateFilter('sph', val)}
-                        onCylChange={(val) => updateFilter('cyl', val)}
-                    />
+        <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200 dark:border-slate-800 p-6 transition-colors">
+            <div className="flex items-center gap-2 mb-6 text-slate-400">
+                <FileSearch className="w-5 h-5" />
+                <h2 className="text-sm font-semibold uppercase tracking-wider">{t.searchFilters}</h2>
+            </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <CategorySelect
-                            label="Main Category"
-                            value={filters.mainCategory}
-                            options={mainCategories}
-                            onChange={(val) => updateFilter('mainCategory', val)}
-                        />
-                        <CategorySelect
-                            label="Sub Category"
-                            value={filters.subCategory}
-                            options={subCategories}
-                            onChange={(val) => updateFilter('subCategory', val)}
+            <div className="grid grid-cols-1 xl:grid-cols-12 gap-6">
+                {/* Prescription Section */}
+                <div className="xl:col-span-4 flex flex-col">
+                    <div className="h-full bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 relative group transition-all hover:border-blue-200 dark:hover:border-blue-900/50">
+                        <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <Glasses className="w-12 h-12 text-blue-600" />
+                        </div>
+                        <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4 flex items-center gap-2">
+                            {t.prescriptionDetails}
+                        </h3>
+                        <PowerInputs
+                            sph={filters.sph}
+                            cyl={filters.cyl}
+                            onSphChange={(val) => updateFilter('sph', val)}
+                            onCylChange={(val) => updateFilter('cyl', val)}
                         />
                     </div>
                 </div>
 
-                <div className="flex flex-col gap-4 min-w-[240px]">
-                    <div className="relative">
-                        <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
-                            Discount (%)
+                {/* Category Section */}
+                <div className="xl:col-span-5 flex flex-col">
+                    <div className="h-full bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 relative group transition-all hover:border-purple-200 dark:hover:border-purple-900/50">
+                        <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <Layers className="w-12 h-12 text-purple-600" />
+                        </div>
+                        <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">
+                            {t.lensCategory}
+                        </h3>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <CategorySelect
+                                label={t.mainCategory}
+                                value={filters.mainCategory}
+                                options={mainCategories}
+                                onChange={(val) => updateFilter('mainCategory', val)}
+                            />
+                            <CategorySelect
+                                label={t.subCategory}
+                                value={filters.subCategory}
+                                options={subCategories}
+                                onChange={(val) => updateFilter('subCategory', val)}
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                {/* Actions Section */}
+                <div className="xl:col-span-3 flex flex-col gap-4">
+                    <div className="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 flex-1">
+                        <label className="block text-xs font-bold text-slate-400 uppercase tracking-wider mb-2">
+                            {t.discount}
                         </label>
-                        <div className="relative">
+                        <div className="relative mt-2">
                             <Percent className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
                             <input
                                 type="number"
@@ -65,40 +94,20 @@ const InputForm: React.FC<InputFormProps> = ({
                                 max="100"
                                 value={filters.discount}
                                 onChange={(e) => updateFilter('discount', parseInt(e.target.value) || 0)}
-                                className="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
                                 placeholder="0"
                             />
                         </div>
                     </div>
 
                     <button
-                        onClick={onOpenScanner}
-                        className="w-full py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-semibold flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20 active:scale-95 transition-all"
+                        onClick={onSearch}
+                        className="w-full py-4 bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-2xl font-bold transition-all shadow-lg shadow-blue-500/25 active:scale-95 flex items-center justify-center gap-2 group"
                     >
-                        <QrCode className="w-5 h-5" />
-                        Scan QR Code
+                        <Search className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                        <span>{t.searchStock}</span>
                     </button>
                 </div>
-            </div>
-
-            <div className="relative pt-4 border-t border-slate-100 dark:border-slate-800 flex gap-4">
-                <div className="relative flex-1">
-                    <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
-                    <input
-                        type="text"
-                        value={filters.search}
-                        onChange={(e) => updateFilter('search', e.target.value)}
-                        placeholder="Search by category, feature, or serial..."
-                        className="w-full pl-10 pr-4 py-3 bg-slate-50 dark:bg-slate-800/50 rounded-2xl border border-transparent focus:bg-white dark:focus:bg-slate-800 focus:border-blue-500 dark:focus:border-blue-500 text-slate-900 dark:text-white outline-none transition-all"
-                    />
-                </div>
-                <button
-                    onClick={onSearch}
-                    className="px-8 py-3 bg-emerald-600 hover:bg-emerald-700 text-white rounded-2xl font-bold transition-all shadow-lg shadow-emerald-500/20 active:scale-95 flex items-center gap-2"
-                >
-                    <Search className="w-5 h-5" />
-                    Search
-                </button>
             </div>
         </div>
     );
