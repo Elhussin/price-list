@@ -10,7 +10,6 @@ interface ResultsTableProps {
 }
 
 const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
-    console.log(lenses);
     const [sort, setSort] = useState<SortConfig>({ key: null, direction: 'asc' });
 
     const handleSort = (key: keyof Lens) => {
@@ -28,13 +27,18 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
 
     const sortedLenses = [...lenses].sort((a, b) => {
         if (!sort.key) return 0;
-        const key = sort.key!;
+        const key = sort.key!; // Type assert: keyof Lens
         const aVal = a[key];
         const bVal = b[key];
 
-        // Safety check for numeric sorting
-        const valA = typeof aVal === 'number' ? aVal : parseFloat(String(aVal)) || 0;
-        const valB = typeof bVal === 'number' ? bVal : parseFloat(String(bVal)) || 0;
+        // Handle numeric sorting
+        if (typeof aVal === 'number' && typeof bVal === 'number') {
+            return sort.direction === 'asc' ? aVal - bVal : bVal - aVal;
+        }
+
+        // Handle string sorting (case-insensitive)
+        const valA = String(aVal || '').toLowerCase();
+        const valB = String(bVal || '').toLowerCase();
 
         if (valA < valB) return sort.direction === 'asc' ? -1 : 1;
         if (valA > valB) return sort.direction === 'asc' ? 1 : -1;
@@ -63,8 +67,8 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
             <div className="flex flex-wrap items-center gap-3 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
                 <span className="text-sm font-medium text-slate-500 dark:text-slate-400">{t.sortBy}</span>
                 <div className="flex flex-wrap gap-2">
-                    {[t.category, t.price, t.diameter].map((header, idx) => {
-                        const keys: (keyof Lens)[] = ['MAINCATEGORY', 'PRICE', 'DIAMETER'];
+                    {[t.category, t.subCategory, t.price, t.diameter].map((header, idx) => {
+                        const keys: (keyof Lens)[] = ['MAINCATEGORY', 'SUBCATEGORY', 'PRICE', 'DIAMETER'];
                         const key = keys[idx];
                         const isActive = sort.key === key;
                         return (

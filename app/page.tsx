@@ -62,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'dark' : ''} bg-slate-50 dark:bg-emerald-900`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
+    <div className={`min-h-screen ${darkMode ? 'dark' : ''} bg-slate-50 dark:bg-slate-950`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
       <Header
         darkMode={darkMode}
         toggleDarkMode={() => setDarkMode(!darkMode)}

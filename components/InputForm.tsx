@@ -44,14 +44,14 @@ const InputForm: React.FC<InputFormProps> = ({
     return (
         <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200 dark:border-slate-800 p-6 transition-colors">
             {/* Same content ... */}
-            <div className="flex items-center gap-2 mb-6 text-slate-400">
+            {/* <div className="flex items-center gap-2 mb-6 text-slate-400">
                 <FileSearch className="w-5 h-5" />
                 <h2 className="text-sm font-semibold uppercase tracking-wider">{t.searchFilters}</h2>
-            </div>
+            </div> */}
 
-            <div className="grid grid-cols-1 xl:grid-cols-12 gap-6">
+            <div className="grid grid-cols-1 xl:grid-cols-8 gap-6">
                 {/* Prescription Section */}
-                <div className="xl:col-span-4 flex flex-col">
+                <div className="xl:col-span-8 flex flex-col">
                     <div className="h-full bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 relative group transition-all hover:border-blue-200 dark:hover:border-blue-900/50">
                         <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
                             <Glasses className="w-12 h-12 text-blue-600" />
@@ -107,7 +107,8 @@ const InputForm: React.FC<InputFormProps> = ({
                                 min="0"
                                 max="100"
                                 value={filters.discount}
-                                onChange={(e) => updateFilter('discount', parseInt(e.target.value) || 0)}
+                                onFocus={(e) => e.target.select()}
+                                onChange={(e) => updateFilter('discount', parseInt(e.target.value))}
                                 className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
                                 placeholder="0"
                             />
@@ -118,8 +119,8 @@ const InputForm: React.FC<InputFormProps> = ({
                         onClick={onSearch}
                         disabled={isSearchDisabled}
                         className={`w-full py-4 rounded-2xl font-bold transition-all flex items-center justify-center gap-2 group ${isSearchDisabled
-                                ? 'bg-slate-100 dark:bg-slate-800 text-slate-400 cursor-not-allowed border border-slate-200 dark:border-slate-700'
-                                : 'bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg shadow-blue-500/25 active:scale-95'
+                            ? 'bg-slate-100 dark:bg-slate-800 text-slate-400 cursor-not-allowed border border-slate-200 dark:border-slate-700'
+                            : 'bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg shadow-blue-500/25 active:scale-95'
                             }`}
                     >
                         <Search className={`w-5 h-5 transition-transform ${!isSearchDisabled && 'group-hover:scale-110'}`} />
