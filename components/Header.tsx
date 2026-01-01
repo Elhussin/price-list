@@ -1,6 +1,7 @@
 import React from 'react';
 import { Sun, Moon, Globe } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { translations, Language } from '@/lib/translations';
 
 interface HeaderProps {
@@ -19,7 +20,9 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, language, set
 
                 <div className="flex items-center gap-3">
                     <div className="bg-white p-2 rounded-lg">
-                        <Image src="/logo.png" alt="Logo" width={50} height={50} />
+                        <Link href="https://www.alyosseroptical.com/en/" target="_blank">
+                            <Image src="/logo.png" alt="Logo" width={50} height={50} />
+                        </Link>
                     </div>
                     <h1 className="text-xl font-bold bg-gradient-to-r text-white bg-clip-text hidden sm:block">
                         {t.appName}
