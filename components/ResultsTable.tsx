@@ -109,7 +109,21 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
                             <div className="space-y-4 ">
                                 {/*  ←‑‑ أضف dir="ltr" أو style={{ direction: 'ltr' }} هنا */}
                                 <div className="space-y-4" dir="ltr">
-                                    <div className="flex justify-between items-start gap-4">
+                                    <div className="text-right">
+                                        <h4
+                                            className="font-semibold text-slate-900 dark:text-white line-clamp-1"
+                                            title={lens?.MAINCATEGORY}
+                                        >
+                                            {lens?.MAINCATEGORY}
+                                        </h4>
+                                        <p
+                                            className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1"
+                                            title={lens?.SUBCATEGORY}
+                                        >
+                                            {lens?.SUBCATEGORY}
+                                        </p>
+                                    </div>
+                                    <div className=" justify-between items-start   grid grid-cols-1  gap-4">
                                         <div>
                                             <h4
                                                 className="font-semibold text-slate-900 dark:text-white line-clamp-1"
@@ -125,20 +139,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
                                             </p>
                                         </div>
 
-                                        <div className="text-right">
-                                            <h4
-                                                className="font-semibold text-slate-900 dark:text-white line-clamp-1"
-                                                title={lens?.MAINCATEGORY}
-                                            >
-                                                {lens?.MAINCATEGORY}
-                                            </h4>
-                                            <p
-                                                className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 line-clamp-1"
-                                                title={lens?.SUBCATEGORY}
-                                            >
-                                                {lens?.SUBCATEGORY}
-                                            </p>
-                                        </div>
+
                                     </div>
                                 </div>
                                 {/* <div className="grid grid-cols-3 gap-2">
@@ -170,11 +171,11 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
                                 <div className="flex flex-col items-end">
                                     {discount > 0 && (
                                         <span className="text-xs text-slate-400 line-through">
-                                            EG{price.toFixed(2)}
+                                            EG {price.toFixed(2)}
                                         </span>
                                     )}
                                     <span className="text-xl font-bold text-blue-600 dark:text-blue-400">
-                                        EG{calculateDiscountedPrice(price)}
+                                        EG {calculateDiscountedPrice(price)}
                                     </span>
                                 </div>
                             </div>

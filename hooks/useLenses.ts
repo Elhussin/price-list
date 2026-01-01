@@ -1,5 +1,6 @@
 import { useState, useCallback } from 'react';
 import { Lens, FilterState } from '@/types';
+import { transposePrescription, formatPower } from '@/utils/transpose';
 
 export const useLenses = () => {
     const [lenses, setLenses] = useState<Lens[]>([]);
@@ -38,14 +39,32 @@ export const useLenses = () => {
         setError(null);
         try {
             const params = new URLSearchParams();
-            if(filters.sph !== ''){
-                if(isNaN(Number(filters.sph))){  setError('Please enter a valid SPH value'); return;}
+            
+            // Validate inputs if present
+            if(filters.sph !== '' && isNaN(Number(filters.sph))){
+                 setError('Please enter a valid SPH value'); return;
             }
-            if(filters.cyl !== ''){
-                if(isNaN(Number(filters.cyl))){  setError('Please enter a valid CYL value'); return;}
+            if(filters.cyl !== '' && isNaN(Number(filters.cyl))){
+                 setError('Please enter a valid CYL value'); return;
             }
-            if (filters.sph !== '') params.append('sph', filters.sph);
-            if (filters.cyl !== '') params.append('cyl', filters.cyl);
+
+            let searchSph = filters.sph;
+            let searchCyl = filters.cyl;
+
+            // Apply transposition for search if both values are present
+            if (searchSph !== '' && searchCyl !== '') {
+                const sVal = parseFloat(searchSph);
+                const cVal = parseFloat(searchCyl);
+                // Transpose (converts +CYL to -CYL)
+                const transposed = transposePrescription(sVal, cVal);
+                
+                // Always use formatted values for consistency with DB
+                searchSph = formatPower(transposed.sph);
+                searchCyl = formatPower(transposed.cyl);
+            }
+
+            if (searchSph !== '') params.append('sph', searchSph);
+            if (searchCyl !== '') params.append('cyl', searchCyl);
             if (filters.mainCategory) params.append('mainCategory', filters.mainCategory);
             if (filters.subCategory) params.append('subCategory', filters.subCategory);
             if (filters.search) params.append('search', filters.search);
