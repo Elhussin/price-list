@@ -499,7 +499,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+03.00', '+00.00', 37.5, 'بيست', 'كات بيست', 65, '3٫75', 'BEST', '1.56 HMC BLUE CUT'),
 ('+04.00', '-00.25', 37.5, 'بيست', 'كات بيست', 65, '4', 'BEST', '1.56 HMC BLUE CUT'),
 ('+04.00', '-00.50', 37.5, 'بيست', 'كات بيست', 65, '4٫25', 'BEST', '1.56 HMC BLUE CUT'),
-('+04.00', '-00.75', 37.5, 'بيست', 'كات بيست', 65, '4٫5', 'BEST', '1.56 HMC BLUE CUT')
+('+04.00', '-00.75', 37.5, 'بيست', 'كات بيست', 65, '4٫5', 'BEST', '1.56 HMC BLUE CUT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+04.00', '-01.00', 37.5, 'بيست', 'كات بيست', 65, '4٫75', 'BEST', '1.56 HMC BLUE CUT'),
 ('+05.00', '-01.25', 37.5, 'بيست', 'كات بيست', 65, '5', 'BEST', '1.56 HMC BLUE CUT'),
@@ -1000,7 +1000,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-04.75', '-01.50', 30.5, 'بيست', 'بلاستك اخضر بيست', 72, '-04.75-01.50', 'BEST', '1.56 HMC GREEN COAT'),
 ('-04.75', '-01.75', 30.5, 'بيست', 'بلاستك اخضر بيست', 72, '-04.75-01.75', 'BEST', '1.56 HMC GREEN COAT'),
 ('-04.75', '-02.00', 30.5, 'بيست', 'بلاستك اخضر بيست', 72, '-04.75-02.00', 'BEST', '1.56 HMC GREEN COAT'),
-('-04.75', '-02.25', 46.5, 'بيست', 'بلاستك اخضر بيست', 70, '-04.75-02.25', 'BEST', '1.56 HMC GREEN COAT')
+('-04.75', '-02.25', 46.5, 'بيست', 'بلاستك اخضر بيست', 70, '-04.75-02.25', 'BEST', '1.56 HMC GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-04.75', '-02.50', 46.5, 'بيست', 'بلاستك اخضر بيست', 70, '-04.75-02.50', 'BEST', '1.56 HMC GREEN COAT'),
 ('-04.75', '-02.75', 46.5, 'بيست', 'بلاستك اخضر بيست', 70, '-04.75-02.75', 'BEST', '1.56 HMC GREEN COAT'),
@@ -1501,7 +1501,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+07.00', '-01.75', 38, 'بيست', 'بلاستك اخضر بيست', 60, '7', 'BEST', '1.56 HMC GREEN COAT'),
 ('+07.00', '-02.00', 38, 'بيست', 'بلاستك اخضر بيست', 60, '7٫25', 'BEST', '1.56 HMC GREEN COAT'),
 ('+05.00', '+00.00', 38, 'بيست', 'بلاستك اخضر بيست', 60, '5٫5', 'BEST', '1.56 HMC GREEN COAT'),
-('+05.00', '-00.25', 38, 'بيست', 'بلاستك اخضر بيست', 60, '5٫75', 'BEST', '1.56 HMC GREEN COAT')
+('+05.00', '-00.25', 38, 'بيست', 'بلاستك اخضر بيست', 60, '5٫75', 'BEST', '1.56 HMC GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+06.00', '-00.50', 38, 'بيست', 'بلاستك اخضر بيست', 60, '6', 'BEST', '1.56 HMC GREEN COAT'),
 ('+06.00', '-00.75', 38, 'بيست', 'بلاستك اخضر بيست', 60, '6٫25', 'BEST', '1.56 HMC GREEN COAT'),
@@ -2002,7 +2002,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-05.75', '-02.00', 54, 'بيست', 'برون بيست', 72, '-05.75-02.00', 'BEST', '1.56 HMC PHOTO BROWN'),
 ('-06.00', '+00.00', 54, 'بيست', 'برون بيست', 72, '-06.00-00.00', 'BEST', '1.56 HMC PHOTO BROWN'),
 ('-06.00', '-00.25', 54, 'بيست', 'برون بيست', 72, '-06.00-00.25', 'BEST', '1.56 HMC PHOTO BROWN'),
-('-06.00', '-00.50', 54, 'بيست', 'برون بيست', 72, '-06.00-00.50', 'BEST', '1.56 HMC PHOTO BROWN')
+('-06.00', '-00.50', 54, 'بيست', 'برون بيست', 72, '-06.00-00.50', 'BEST', '1.56 HMC PHOTO BROWN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-06.00', '-00.75', 54, 'بيست', 'برون بيست', 72, '-06.00-00.75', 'BEST', '1.56 HMC PHOTO BROWN'),
 ('-06.00', '-01.00', 54, 'بيست', 'برون بيست', 72, '-06.00-01.00', 'BEST', '1.56 HMC PHOTO BROWN'),
@@ -2503,7 +2503,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-03.00', '-03.25', 76.5, 'بيست', 'جراي بيست', 65, '-03.00-03.25', 'BEST', '1.56 HMC PHOTO GREY'),
 ('-03.00', '-03.50', 76.5, 'بيست', 'جراي بيست', 65, '-03.00-03.50', 'BEST', '1.56 HMC PHOTO GREY'),
 ('-03.00', '-03.75', 76.5, 'بيست', 'جراي بيست', 65, '-03.00-03.75', 'BEST', '1.56 HMC PHOTO GREY'),
-('-03.00', '-04.00', 76.5, 'بيست', 'جراي بيست', 65, '-03.00-04.00', 'BEST', '1.56 HMC PHOTO GREY')
+('-03.00', '-04.00', 76.5, 'بيست', 'جراي بيست', 65, '-03.00-04.00', 'BEST', '1.56 HMC PHOTO GREY');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-03.25', '+00.00', 46, 'بيست', 'جراي بيست', 70, '-03.25-00.00', 'BEST', '1.56 HMC PHOTO GREY'),
 ('-03.25', '-00.25', 46, 'بيست', 'جراي بيست', 70, '-03.25-00.25', 'BEST', '1.56 HMC PHOTO GREY'),
@@ -3004,7 +3004,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-00.75', '-02.00', 24, 'بريلينت', 'بلاستك ابيض', 65, '-00.75-02.00', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('-00.75', '-02.25', 35, 'بريلينت', 'بلاستك ابيض', 65, '-00.75-02.25', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('-00.75', '-02.50', 35, 'بريلينت', 'بلاستك ابيض', 65, '-00.75-02.50', 'BRILLIANT', '1.49 UN COAT CR39'),
-('-00.75', '-02.75', 35, 'بريلينت', 'بلاستك ابيض', 65, '-00.75-02.75', 'BRILLIANT', '1.49 UN COAT CR39')
+('-00.75', '-02.75', 35, 'بريلينت', 'بلاستك ابيض', 65, '-00.75-02.75', 'BRILLIANT', '1.49 UN COAT CR39');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-00.75', '-03.00', 35, 'بريلينت', 'بلاستك ابيض', 65, '-00.75-03.00', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('-00.75', '-03.25', 35, 'بريلينت', 'بلاستك ابيض', 65, '-00.75-03.25', 'BRILLIANT', '1.49 UN COAT CR39'),
@@ -3505,7 +3505,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-05.75', '-02.00', 25.5, 'بريلينت', 'بلاستك ابيض', 65, '-05.75-02.00', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('-05.75', '-02.25', 56, 'بريلينت', 'بلاستك ابيض', 65, '-05.75-02.25', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('-05.75', '-02.50', 56, 'بريلينت', 'بلاستك ابيض', 65, '-05.75-02.50', 'BRILLIANT', '1.49 UN COAT CR39'),
-('-05.75', '-02.75', 56, 'بريلينت', 'بلاستك ابيض', 65, '-05.75-02.75', 'BRILLIANT', '1.49 UN COAT CR39')
+('-05.75', '-02.75', 56, 'بريلينت', 'بلاستك ابيض', 65, '-05.75-02.75', 'BRILLIANT', '1.49 UN COAT CR39');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-05.75', '-03.00', 56, 'بريلينت', 'بلاستك ابيض', 65, '-05.75-03.00', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('-05.75', '-03.25', 56, 'بريلينت', 'بلاستك ابيض', 65, '-05.75-03.25', 'BRILLIANT', '1.49 UN COAT CR39'),
@@ -4006,7 +4006,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+04.00', '-00.75', 24, 'بريلينت', 'بلاستك ابيض', 65, '4٫75', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('+04.00', '-00.75', 29.5, 'بريلينت', 'بلاستك ابيض', 55, '4٫75', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('+05.00', '-01.00', 24, 'بريلينت', 'بلاستك ابيض', 65, '5', 'BRILLIANT', '1.49 UN COAT CR39'),
-('+05.00', '-01.00', 29.5, 'بريلينت', 'بلاستك ابيض', 55, '5', 'BRILLIANT', '1.49 UN COAT CR39')
+('+05.00', '-01.00', 29.5, 'بريلينت', 'بلاستك ابيض', 55, '5', 'BRILLIANT', '1.49 UN COAT CR39');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+05.00', '-01.25', 24, 'بريلينت', 'بلاستك ابيض', 65, '5٫25', 'BRILLIANT', '1.49 UN COAT CR39'),
 ('+05.00', '-01.25', 29.5, 'بريلينت', 'بلاستك ابيض', 55, '5٫25', 'BRILLIANT', '1.49 UN COAT CR39'),
@@ -4507,7 +4507,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-02.00', '-06.00', 132, 'بريلينت', 'كات', 72, '-02.00-06.00', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
 ('-02.25', '+00.00', 68, 'بريلينت', 'كات', 72, '-02.25-00.00', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
 ('-02.25', '-00.25', 68, 'بريلينت', 'كات', 72, '-02.25-00.25', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
-('-02.25', '-00.50', 68, 'بريلينت', 'كات', 72, '-02.25-00.50', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT')
+('-02.25', '-00.50', 68, 'بريلينت', 'كات', 72, '-02.25-00.50', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-02.25', '-00.75', 68, 'بريلينت', 'كات', 72, '-02.25-00.75', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
 ('-02.25', '-01.00', 68, 'بريلينت', 'كات', 72, '-02.25-01.00', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
@@ -5008,7 +5008,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+04.00', '-03.50', 112, 'بريلينت', 'كات', 65, '4٫75', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
 ('+05.00', '-03.75', 112, 'بريلينت', 'كات', 65, '5', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
 ('+05.00', '-04.00', 112, 'بريلينت', 'كات', 65, '5٫25', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
-('+01.00', '+00.00', 68, 'بريلينت', 'كات', 65, '1٫5', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT')
+('+01.00', '+00.00', 68, 'بريلينت', 'كات', 65, '1٫5', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+01.00', '-00.25', 68, 'بريلينت', 'كات', 65, '1٫75', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
 ('+02.00', '-00.50', 68, 'بريلينت', 'كات', 65, '2', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
@@ -5509,7 +5509,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+03.00', '-05.75', 90, 'بريلينت', 'كات', 65, '-2', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
 ('+03.00', '-06.00', 90, 'بريلينت', 'كات', 65, '-2٫25', 'BRILLIANT', '1.56 BLUE CUT SHMC GREEN COAT'),
 ('+00.00', '+00.00', 36, 'بريلينت', 'بلاستك اخضر', 72, '-00.00-00.00', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
-('+00.00', '-00.25', 36, 'بريلينت', 'بلاستك اخضر', 72, '-00.00-00.25', 'BRILLIANT', '1.56 MULTI COAT GREEN')
+('+00.00', '-00.25', 36, 'بريلينت', 'بلاستك اخضر', 72, '-00.00-00.25', 'BRILLIANT', '1.56 MULTI COAT GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+00.00', '-00.50', 36, 'بريلينت', 'بلاستك اخضر', 72, '-00.00-00.50', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('+00.00', '-00.75', 36, 'بريلينت', 'بلاستك اخضر', 72, '-00.00-00.75', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
@@ -6010,7 +6010,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-04.75', '-05.75', 119, 'بريلينت', 'بلاستك اخضر', 72, '-04.75-05.75', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-04.75', '-06.00', 119, 'بريلينت', 'بلاستك اخضر', 72, '-04.75-06.00', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-05.00', '+00.00', 38.5, 'بريلينت', 'بلاستك اخضر', 72, '-05.00-00.00', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
-('-05.00', '-00.25', 38.5, 'بريلينت', 'بلاستك اخضر', 72, '-05.00-00.25', 'BRILLIANT', '1.56 MULTI COAT GREEN')
+('-05.00', '-00.25', 38.5, 'بريلينت', 'بلاستك اخضر', 72, '-05.00-00.25', 'BRILLIANT', '1.56 MULTI COAT GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-05.00', '-00.50', 38.5, 'بريلينت', 'بلاستك اخضر', 72, '-05.00-00.50', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-05.00', '-00.75', 38.5, 'بريلينت', 'بلاستك اخضر', 72, '-05.00-00.75', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
@@ -6511,7 +6511,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-11.50', '-04.00', 159.5, 'بريلينت', 'بلاستك اخضر', 72, '-11.50-04.00', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-11.75', '+00.00', 154, 'بريلينت', 'بلاستك اخضر', 72, '-11.75-00.00', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-11.75', '-00.25', 154, 'بريلينت', 'بلاستك اخضر', 72, '-11.75-00.25', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
-('-11.75', '-00.50', 154, 'بريلينت', 'بلاستك اخضر', 72, '-11.75-00.50', 'BRILLIANT', '1.56 MULTI COAT GREEN')
+('-11.75', '-00.50', 154, 'بريلينت', 'بلاستك اخضر', 72, '-11.75-00.50', 'BRILLIANT', '1.56 MULTI COAT GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-11.75', '-00.75', 154, 'بريلينت', 'بلاستك اخضر', 72, '-11.75-00.75', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-11.75', '-01.00', 154, 'بريلينت', 'بلاستك اخضر', 72, '-11.75-01.00', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
@@ -7012,7 +7012,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-19.00', '-01.50', 159.5, 'بريلينت', 'بلاستك اخضر', 72, '-19.00-01.50', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-19.00', '-01.75', 159.5, 'بريلينت', 'بلاستك اخضر', 72, '-19.00-01.75', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-19.00', '-02.00', 159.5, 'بريلينت', 'بلاستك اخضر', 72, '-19.00-02.00', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
-('-19.00', '-02.25', 171.5, 'بريلينت', 'بلاستك اخضر', 72, '-19.00-02.25', 'BRILLIANT', '1.56 MULTI COAT GREEN')
+('-19.00', '-02.25', 171.5, 'بريلينت', 'بلاستك اخضر', 72, '-19.00-02.25', 'BRILLIANT', '1.56 MULTI COAT GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-19.00', '-02.50', 171.5, 'بريلينت', 'بلاستك اخضر', 72, '-19.00-02.50', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('-19.00', '-02.75', 171.5, 'بريلينت', 'بلاستك اخضر', 72, '-19.00-02.75', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
@@ -7513,7 +7513,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+06.00', '-02.50', 72.5, 'بريلينت', 'بلاستك اخضر', 55, '6٫25', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('+06.00', '-02.75', 72.5, 'بريلينت', 'بلاستك اخضر', 55, '6٫5', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('+06.00', '-03.00', 72.5, 'بريلينت', 'بلاستك اخضر', 55, '6٫75', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
-('+07.00', '-03.25', 72.5, 'بريلينت', 'بلاستك اخضر', 55, '7', 'BRILLIANT', '1.56 MULTI COAT GREEN')
+('+07.00', '-03.25', 72.5, 'بريلينت', 'بلاستك اخضر', 55, '7', 'BRILLIANT', '1.56 MULTI COAT GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+07.00', '-03.50', 72.5, 'بريلينت', 'بلاستك اخضر', 55, '7٫25', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('+07.00', '-03.75', 72.5, 'بريلينت', 'بلاستك اخضر', 55, '7٫5', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
@@ -8014,7 +8014,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+00.00', '-05.75', 99, 'بريلينت', 'بلاستك اخضر', 65, '-5٫25', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('+00.00', '-06.00', 99, 'بريلينت', 'بلاستك اخضر', 65, '-5٫5', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('+00.00', '-01.00', 38.5, 'بريلينت', 'بلاستك اخضر', 65, '-0٫25', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
-('+00.00', '-01.25', 38.5, 'بريلينت', 'بلاستك اخضر', 65, '-0٫5', 'BRILLIANT', '1.56 MULTI COAT GREEN')
+('+00.00', '-01.25', 38.5, 'بريلينت', 'بلاستك اخضر', 65, '-0٫5', 'BRILLIANT', '1.56 MULTI COAT GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+00.00', '-01.50', 38.5, 'بريلينت', 'بلاستك اخضر', 65, '-0٫75', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
 ('+00.00', '-01.75', 38.5, 'بريلينت', 'بلاستك اخضر', 65, '-1', 'BRILLIANT', '1.56 MULTI COAT GREEN'),
@@ -8515,7 +8515,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-04.25', '-01.50', 80, 'بريلينت', 'براون بريلينت', 70, '-04.25-01.50', 'BRILLIANT', '1.56 PHOTO BROWN GREEN COAT'),
 ('-04.25', '-01.75', 80, 'بريلينت', 'براون بريلينت', 70, '-04.25-01.75', 'BRILLIANT', '1.56 PHOTO BROWN GREEN COAT'),
 ('-04.25', '-02.00', 80, 'بريلينت', 'براون بريلينت', 70, '-04.25-02.00', 'BRILLIANT', '1.56 PHOTO BROWN GREEN COAT'),
-('-04.50', '+00.00', 80, 'بريلينت', 'براون بريلينت', 70, '-04.50-00.00', 'BRILLIANT', '1.56 PHOTO BROWN GREEN COAT')
+('-04.50', '+00.00', 80, 'بريلينت', 'براون بريلينت', 70, '-04.50-00.00', 'BRILLIANT', '1.56 PHOTO BROWN GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-04.50', '-00.25', 80, 'بريلينت', 'براون بريلينت', 70, '-04.50-00.25', 'BRILLIANT', '1.56 PHOTO BROWN GREEN COAT'),
 ('-04.50', '-00.50', 80, 'بريلينت', 'براون بريلينت', 70, '-04.50-00.50', 'BRILLIANT', '1.56 PHOTO BROWN GREEN COAT'),
@@ -9016,7 +9016,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-01.50', '-02.75', 125, 'بريلينت', 'جراي بريلينت', 70, '-01.50-02.75', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
 ('-01.50', '-03.00', 125, 'بريلينت', 'جراي بريلينت', 70, '-01.50-03.00', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
 ('-01.50', '-03.25', 125, 'بريلينت', 'جراي بريلينت', 70, '-01.50-03.25', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
-('-01.50', '-03.50', 125, 'بريلينت', 'جراي بريلينت', 70, '-01.50-03.50', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT')
+('-01.50', '-03.50', 125, 'بريلينت', 'جراي بريلينت', 70, '-01.50-03.50', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-01.50', '-03.75', 125, 'بريلينت', 'جراي بريلينت', 70, '-01.50-03.75', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
 ('-01.50', '-04.00', 125, 'بريلينت', 'جراي بريلينت', 70, '-01.50-04.00', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
@@ -9517,7 +9517,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+05.00', '-03.75', 128.5, 'بريلينت', 'جراي بريلينت', 65, '5', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
 ('+05.00', '-04.00', 128.5, 'بريلينت', 'جراي بريلينت', 65, '5٫25', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
 ('+01.00', '+00.00', 76, 'بريلينت', 'جراي بريلينت', 65, '1٫5', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
-('+01.00', '-00.25', 76, 'بريلينت', 'جراي بريلينت', 65, '1٫75', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT')
+('+01.00', '-00.25', 76, 'بريلينت', 'جراي بريلينت', 65, '1٫75', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+02.00', '-00.50', 76, 'بريلينت', 'جراي بريلينت', 65, '2', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
 ('+02.00', '-00.75', 76, 'بريلينت', 'جراي بريلينت', 65, '2٫25', 'BRILLIANT', '1.56 PHOTO GRAY GREEN COAT'),
@@ -10018,7 +10018,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-02.75', '-01.00', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 70, '-02.75-01.00', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
 ('-02.75', '-01.25', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 70, '-02.75-01.25', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
 ('-02.75', '-01.50', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 70, '-02.75-01.50', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
-('-02.75', '-01.75', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 70, '-02.75-01.75', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT')
+('-02.75', '-01.75', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 70, '-02.75-01.75', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-02.75', '-02.00', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 70, '-02.75-02.00', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
 ('-02.75', '-02.25', 126.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 70, '-02.75-02.25', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
@@ -10519,7 +10519,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+00.00', '-04.00', 132, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 65, '-3٫25', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
 ('+01.00', '-01.25', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 65, '-0٫25', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
 ('+01.00', '-01.50', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 65, '-0٫5', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
-('+01.00', '-01.75', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 65, '-0٫75', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT')
+('+01.00', '-01.75', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 65, '-0٫75', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+01.00', '-02.00', 60.5, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 65, '-1', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
 ('+01.00', '-02.25', 132, 'بريلينت', 'بولي كاربونيت مقاوم للكسر', 65, '-1٫25', 'BRILLIANT', '1.59 POLY CARBONATE GREEN COAT'),
@@ -11020,7 +11020,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-09.00', '-03.25', 195, 'بريلينت', 'مضغوط 1.61', 70, '-09.00-03.25', 'BRILLIANT', '1.61 HI-INDEX SHMC GREEN COAT'),
 ('-09.00', '-03.50', 195, 'بريلينت', 'مضغوط 1.61', 70, '-09.00-03.50', 'BRILLIANT', '1.61 HI-INDEX SHMC GREEN COAT'),
 ('-09.00', '-03.75', 195, 'بريلينت', 'مضغوط 1.61', 70, '-09.00-03.75', 'BRILLIANT', '1.61 HI-INDEX SHMC GREEN COAT'),
-('-09.00', '-04.00', 195, 'بريلينت', 'مضغوط 1.61', 70, '-09.00-04.00', 'BRILLIANT', '1.61 HI-INDEX SHMC GREEN COAT')
+('-09.00', '-04.00', 195, 'بريلينت', 'مضغوط 1.61', 70, '-09.00-04.00', 'BRILLIANT', '1.61 HI-INDEX SHMC GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-09.25', '+00.00', 86, 'بريلينت', 'مضغوط 1.61', 70, '-09.25-00.00', 'BRILLIANT', '1.61 HI-INDEX SHMC GREEN COAT'),
 ('-09.25', '-00.25', 86, 'بريلينت', 'مضغوط 1.61', 70, '-09.25-00.25', 'BRILLIANT', '1.61 HI-INDEX SHMC GREEN COAT'),
@@ -11521,7 +11521,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-06.25', '-01.75', 168, 'بريلينت', 'مضغوط 1.67', 70, '-06.25-01.75', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
 ('-06.25', '-02.00', 168, 'بريلينت', 'مضغوط 1.67', 70, '-06.25-02.00', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
 ('-06.25', '-02.25', 220, 'بريلينت', 'مضغوط 1.67', 70, '-06.25-02.25', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
-('-06.25', '-02.50', 220, 'بريلينت', 'مضغوط 1.67', 70, '-06.25-02.50', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT')
+('-06.25', '-02.50', 220, 'بريلينت', 'مضغوط 1.67', 70, '-06.25-02.50', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-06.25', '-02.75', 220, 'بريلينت', 'مضغوط 1.67', 70, '-06.25-02.75', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
 ('-06.25', '-03.00', 220, 'بريلينت', 'مضغوط 1.67', 70, '-06.25-03.00', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
@@ -12022,7 +12022,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-13.50', '-03.50', 478.5, 'بريلينت', 'مضغوط 1.67', 70, '-13.50-03.50', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
 ('-13.50', '-03.75', 478.5, 'بريلينت', 'مضغوط 1.67', 70, '-13.50-03.75', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
 ('-13.50', '-04.00', 478.5, 'بريلينت', 'مضغوط 1.67', 70, '-13.50-04.00', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
-('-13.75', '+00.00', 194, 'بريلينت', 'مضغوط 1.67', 70, '-13.75-00.00', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT')
+('-13.75', '+00.00', 194, 'بريلينت', 'مضغوط 1.67', 70, '-13.75-00.00', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-13.75', '-00.25', 462, 'بريلينت', 'مضغوط 1.67', 70, '-13.75-00.25', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
 ('-13.75', '-00.50', 462, 'بريلينت', 'مضغوط 1.67', 70, '-13.75-00.50', 'BRILLIANT', '1.67 HI-INDEX SHMC GREEN COAT'),
@@ -12523,7 +12523,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-04.50', '-02.25', 225, 'بريلينت وان', 'بريت بلو', 75, '-04.50-02.25', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
 ('-04.50', '-02.50', 225, 'بريلينت وان', 'بريت بلو', 75, '-04.50-02.50', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
 ('-04.50', '-02.75', 225, 'بريلينت وان', 'بريت بلو', 75, '-04.50-02.75', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
-('-04.50', '-03.00', 225, 'بريلينت وان', 'بريت بلو', 75, '-04.50-03.00', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE')
+('-04.50', '-03.00', 225, 'بريلينت وان', 'بريت بلو', 75, '-04.50-03.00', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-04.50', '-03.25', 225, 'بريلينت وان', 'بريت بلو', 75, '-04.50-03.25', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
 ('-04.50', '-03.50', 225, 'بريلينت وان', 'بريت بلو', 75, '-04.50-03.50', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
@@ -13024,7 +13024,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+05.00', '+00.00', 225, 'بريلينت وان', 'بريت بلو', 55, '5٫5', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
 ('+05.00', '-00.25', 225, 'بريلينت وان', 'بريت بلو', 55, '5٫75', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
 ('+06.00', '-00.50', 225, 'بريلينت وان', 'بريت بلو', 55, '6', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
-('+06.00', '-00.75', 225, 'بريلينت وان', 'بريت بلو', 55, '6٫25', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE')
+('+06.00', '-00.75', 225, 'بريلينت وان', 'بريت بلو', 55, '6٫25', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+06.00', '-01.00', 225, 'بريلينت وان', 'بريت بلو', 55, '6٫5', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
 ('+06.00', '-01.25', 225, 'بريلينت وان', 'بريت بلو', 55, '6٫75', 'BRILLIANT ONE', '1.56 AS BRIGHT BLUE'),
@@ -13525,7 +13525,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-06.00', '-00.25', 65, 'بريلينت وان', 'بي وان', 72, '-06.00-00.25', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
 ('-06.00', '-00.50', 65, 'بريلينت وان', 'بي وان', 72, '-06.00-00.50', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
 ('-06.00', '-00.75', 65, 'بريلينت وان', 'بي وان', 72, '-06.00-00.75', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
-('-06.00', '-01.00', 65, 'بريلينت وان', 'بي وان', 72, '-06.00-01.00', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN')
+('-06.00', '-01.00', 65, 'بريلينت وان', 'بي وان', 72, '-06.00-01.00', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-06.00', '-01.25', 65, 'بريلينت وان', 'بي وان', 72, '-06.00-01.25', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
 ('-06.00', '-01.50', 65, 'بريلينت وان', 'بي وان', 72, '-06.00-01.50', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
@@ -14026,7 +14026,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+02.00', '-02.75', 90, 'بريلينت وان', 'بي وان', 65, '-0٫75', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
 ('+02.00', '-03.00', 90, 'بريلينت وان', 'بي وان', 65, '-1', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
 ('+02.00', '-03.25', 90, 'بريلينت وان', 'بي وان', 65, '-1٫25', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
-('+02.00', '-03.50', 90, 'بريلينت وان', 'بي وان', 65, '-1٫5', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN')
+('+02.00', '-03.50', 90, 'بريلينت وان', 'بي وان', 65, '-1٫5', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+02.00', '-03.75', 90, 'بريلينت وان', 'بي وان', 65, '-1٫75', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
 ('+02.00', '-04.00', 90, 'بريلينت وان', 'بي وان', 65, '-2', 'BRILLIANT ONE', '1.56 B.ONE SHMC GREEN'),
@@ -14527,7 +14527,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+04.00', '-01.50', 115, 'بريلينت وان', 'نايت درايف', 65, '4٫25', 'BRILLIANT ONE', '1.56 NIGHT DRIVE SHMC PURPLE'),
 ('+04.00', '-01.75', 115, 'بريلينت وان', 'نايت درايف', 65, '4٫5', 'BRILLIANT ONE', '1.56 NIGHT DRIVE SHMC PURPLE'),
 ('+04.00', '-02.00', 115, 'بريلينت وان', 'نايت درايف', 65, '4٫75', 'BRILLIANT ONE', '1.56 NIGHT DRIVE SHMC PURPLE'),
-('+03.00', '+00.00', 115, 'بريلينت وان', 'نايت درايف', 65, '3', 'BRILLIANT ONE', '1.56 NIGHT DRIVE SHMC PURPLE')
+('+03.00', '+00.00', 115, 'بريلينت وان', 'نايت درايف', 65, '3', 'BRILLIANT ONE', '1.56 NIGHT DRIVE SHMC PURPLE');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+03.00', '-00.25', 115, 'بريلينت وان', 'نايت درايف', 65, '3٫25', 'BRILLIANT ONE', '1.56 NIGHT DRIVE SHMC PURPLE'),
 ('+03.00', '-00.50', 115, 'بريلينت وان', 'نايت درايف', 65, '3٫5', 'BRILLIANT ONE', '1.56 NIGHT DRIVE SHMC PURPLE'),
@@ -15028,7 +15028,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-05.25', '-01.75', 138, 'بريلينت وان', 'كات جراي', 72, '-05.25-01.75', 'BRILLIANT ONE', '1.56 PHOTO GRAY BLUE CUT SHMC GREEN'),
 ('-05.25', '-02.00', 138, 'بريلينت وان', 'كات جراي', 72, '-05.25-02.00', 'BRILLIANT ONE', '1.56 PHOTO GRAY BLUE CUT SHMC GREEN'),
 ('-05.50', '+00.00', 138, 'بريلينت وان', 'كات جراي', 72, '-05.50-00.00', 'BRILLIANT ONE', '1.56 PHOTO GRAY BLUE CUT SHMC GREEN'),
-('-05.50', '-00.25', 138, 'بريلينت وان', 'كات جراي', 72, '-05.50-00.25', 'BRILLIANT ONE', '1.56 PHOTO GRAY BLUE CUT SHMC GREEN')
+('-05.50', '-00.25', 138, 'بريلينت وان', 'كات جراي', 72, '-05.50-00.25', 'BRILLIANT ONE', '1.56 PHOTO GRAY BLUE CUT SHMC GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-05.50', '-00.50', 138, 'بريلينت وان', 'كات جراي', 72, '-05.50-00.50', 'BRILLIANT ONE', '1.56 PHOTO GRAY BLUE CUT SHMC GREEN'),
 ('-05.50', '-00.75', 138, 'بريلينت وان', 'كات جراي', 72, '-05.50-00.75', 'BRILLIANT ONE', '1.56 PHOTO GRAY BLUE CUT SHMC GREEN'),
@@ -15529,7 +15529,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-04.25', '-00.25', 135, 'بريلينت وان', 'سوبر فيكس', 75, '-04.25-00.25', 'BRILLIANT ONE', '1.56 SUPERVEX SHMC GREEN'),
 ('-04.25', '-00.50', 135, 'بريلينت وان', 'سوبر فيكس', 75, '-04.25-00.50', 'BRILLIANT ONE', '1.56 SUPERVEX SHMC GREEN'),
 ('-04.25', '-00.75', 135, 'بريلينت وان', 'سوبر فيكس', 75, '-04.25-00.75', 'BRILLIANT ONE', '1.56 SUPERVEX SHMC GREEN'),
-('-04.25', '-01.00', 135, 'بريلينت وان', 'سوبر فيكس', 75, '-04.25-01.00', 'BRILLIANT ONE', '1.56 SUPERVEX SHMC GREEN')
+('-04.25', '-01.00', 135, 'بريلينت وان', 'سوبر فيكس', 75, '-04.25-01.00', 'BRILLIANT ONE', '1.56 SUPERVEX SHMC GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-04.25', '-01.25', 135, 'بريلينت وان', 'سوبر فيكس', 75, '-04.25-01.25', 'BRILLIANT ONE', '1.56 SUPERVEX SHMC GREEN'),
 ('-04.25', '-01.50', 135, 'بريلينت وان', 'سوبر فيكس', 75, '-04.25-01.50', 'BRILLIANT ONE', '1.56 SUPERVEX SHMC GREEN'),
@@ -16030,7 +16030,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-01.50', '-01.50', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 75, '-01.50-01.50', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
 ('-01.50', '-01.75', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 75, '-01.50-01.75', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
 ('-01.50', '-02.00', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 75, '-01.50-02.00', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
-('-01.50', '-02.25', 140, 'بريلينت وان', 'مقاوم للكسر بلو كت', 75, '-01.50-02.25', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT')
+('-01.50', '-02.25', 140, 'بريلينت وان', 'مقاوم للكسر بلو كت', 75, '-01.50-02.25', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-01.50', '-02.50', 140, 'بريلينت وان', 'مقاوم للكسر بلو كت', 75, '-01.50-02.50', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
 ('-01.50', '-02.75', 140, 'بريلينت وان', 'مقاوم للكسر بلو كت', 75, '-01.50-02.75', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
@@ -16531,7 +16531,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+02.00', '-02.00', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 65, '2٫75', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
 ('+01.00', '-00.25', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 65, '1٫25', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
 ('+01.00', '-00.50', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 65, '1٫5', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
-('+01.00', '-00.75', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 65, '1٫75', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT')
+('+01.00', '-00.75', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 65, '1٫75', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+02.00', '-01.00', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 65, '2', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
 ('+02.00', '-01.25', 110, 'بريلينت وان', 'مقاوم للكسر بلو كت', 65, '2٫25', 'BRILLIANT ONE', '1.59 POLY CARBONATE BLUE CUT'),
@@ -17032,7 +17032,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-04.00', '-00.75', 375, 'بريلينت وان', '1.6 ترانسمشن بلو كت', 75, '-04.00-00.75', 'BRILLIANT ONE', '1.60 AS PHOTO GRAY B.CUT SPIN GREEN COAT'),
 ('-04.00', '-01.00', 375, 'بريلينت وان', '1.6 ترانسمشن بلو كت', 75, '-04.00-01.00', 'BRILLIANT ONE', '1.60 AS PHOTO GRAY B.CUT SPIN GREEN COAT'),
 ('-04.00', '-01.25', 375, 'بريلينت وان', '1.6 ترانسمشن بلو كت', 75, '-04.00-01.25', 'BRILLIANT ONE', '1.60 AS PHOTO GRAY B.CUT SPIN GREEN COAT'),
-('-04.00', '-01.50', 375, 'بريلينت وان', '1.6 ترانسمشن بلو كت', 75, '-04.00-01.50', 'BRILLIANT ONE', '1.60 AS PHOTO GRAY B.CUT SPIN GREEN COAT')
+('-04.00', '-01.50', 375, 'بريلينت وان', '1.6 ترانسمشن بلو كت', 75, '-04.00-01.50', 'BRILLIANT ONE', '1.60 AS PHOTO GRAY B.CUT SPIN GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-04.00', '-01.75', 375, 'بريلينت وان', '1.6 ترانسمشن بلو كت', 75, '-04.00-01.75', 'BRILLIANT ONE', '1.60 AS PHOTO GRAY B.CUT SPIN GREEN COAT'),
 ('-04.00', '-02.00', 375, 'بريلينت وان', '1.6 ترانسمشن بلو كت', 75, '-04.00-02.00', 'BRILLIANT ONE', '1.60 AS PHOTO GRAY B.CUT SPIN GREEN COAT'),
@@ -17533,7 +17533,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-05.00', '-01.50', 87, 'بريلينت وان', 'كات 1.6', 75, '-05.00-01.50', 'BRILLIANT ONE', '1.61 HI-INDEX BLUE CUT SHMC GREEN'),
 ('-05.00', '-01.75', 87, 'بريلينت وان', 'كات 1.6', 75, '-05.00-01.75', 'BRILLIANT ONE', '1.61 HI-INDEX BLUE CUT SHMC GREEN'),
 ('-05.00', '-02.00', 87, 'بريلينت وان', 'كات 1.6', 75, '-05.00-02.00', 'BRILLIANT ONE', '1.61 HI-INDEX BLUE CUT SHMC GREEN'),
-('-05.00', '-02.25', 138, 'بريلينت وان', 'كات 1.6', 72, '-05.00-02.25', 'BRILLIANT ONE', '1.61 HI-INDEX BLUE CUT SHMC GREEN')
+('-05.00', '-02.25', 138, 'بريلينت وان', 'كات 1.6', 72, '-05.00-02.25', 'BRILLIANT ONE', '1.61 HI-INDEX BLUE CUT SHMC GREEN');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-05.00', '-02.50', 138, 'بريلينت وان', 'كات 1.6', 72, '-05.00-02.50', 'BRILLIANT ONE', '1.61 HI-INDEX BLUE CUT SHMC GREEN'),
 ('-05.00', '-02.75', 138, 'بريلينت وان', 'كات 1.6', 72, '-05.00-02.75', 'BRILLIANT ONE', '1.61 HI-INDEX BLUE CUT SHMC GREEN'),
@@ -18034,7 +18034,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-06.00', '-03.25', 80, 'زجاج', 'زجاج فلنت اخضر', 65, '-06.00-03.25', 'GL', 'GL 1.7 GREEN COAT'),
 ('-06.00', '-03.50', 80, 'زجاج', 'زجاج فلنت اخضر', 65, '-06.00-03.50', 'GL', 'GL 1.7 GREEN COAT'),
 ('-06.00', '-03.75', 80, 'زجاج', 'زجاج فلنت اخضر', 65, '-06.00-03.75', 'GL', 'GL 1.7 GREEN COAT'),
-('-06.00', '-04.00', 80, 'زجاج', 'زجاج فلنت اخضر', 65, '-06.00-04.00', 'GL', 'GL 1.7 GREEN COAT')
+('-06.00', '-04.00', 80, 'زجاج', 'زجاج فلنت اخضر', 65, '-06.00-04.00', 'GL', 'GL 1.7 GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-06.25', '+00.00', 54.5, 'زجاج', 'زجاج فلنت اخضر', 65, '-06.25-00.00', 'GL', 'GL 1.7 GREEN COAT'),
 ('-06.25', '-00.25', 75.5, 'زجاج', 'زجاج فلنت اخضر', 65, '-06.25-00.25', 'GL', 'GL 1.7 GREEN COAT'),
@@ -18535,7 +18535,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-05.00', '-01.00', 51, 'زجاج', 'زجاج فلنت ابيض', 65, '-05.00-01.00', 'GL', 'GL 1.7 W'),
 ('-05.00', '-01.25', 51, 'زجاج', 'زجاج فلنت ابيض', 65, '-05.00-01.25', 'GL', 'GL 1.7 W'),
 ('-05.00', '-01.50', 51, 'زجاج', 'زجاج فلنت ابيض', 65, '-05.00-01.50', 'GL', 'GL 1.7 W'),
-('-05.00', '-01.75', 51, 'زجاج', 'زجاج فلنت ابيض', 65, '-05.00-01.75', 'GL', 'GL 1.7 W')
+('-05.00', '-01.75', 51, 'زجاج', 'زجاج فلنت ابيض', 65, '-05.00-01.75', 'GL', 'GL 1.7 W');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-05.00', '-02.00', 51, 'زجاج', 'زجاج فلنت ابيض', 65, '-05.00-02.00', 'GL', 'GL 1.7 W'),
 ('-05.00', '-02.25', 63, 'زجاج', 'زجاج فلنت ابيض', 65, '-05.00-02.25', 'GL', 'GL 1.7 W'),
@@ -19036,7 +19036,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-12.50', '-00.50', 88, 'زجاج', 'زجاج فلنت ابيض', 65, '-12.50-00.50', 'GL', 'GL 1.7 W'),
 ('-12.50', '-00.75', 88, 'زجاج', 'زجاج فلنت ابيض', 65, '-12.50-00.75', 'GL', 'GL 1.7 W'),
 ('-12.50', '-01.00', 88, 'زجاج', 'زجاج فلنت ابيض', 65, '-12.50-01.00', 'GL', 'GL 1.7 W'),
-('-12.50', '-01.25', 88, 'زجاج', 'زجاج فلنت ابيض', 65, '-12.50-01.25', 'GL', 'GL 1.7 W')
+('-12.50', '-01.25', 88, 'زجاج', 'زجاج فلنت ابيض', 65, '-12.50-01.25', 'GL', 'GL 1.7 W');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-12.50', '-01.50', 88, 'زجاج', 'زجاج فلنت ابيض', 65, '-12.50-01.50', 'GL', 'GL 1.7 W'),
 ('-12.50', '-01.75', 88, 'زجاج', 'زجاج فلنت ابيض', 65, '-12.50-01.75', 'GL', 'GL 1.7 W'),
@@ -19537,7 +19537,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+01.00', '+00.00', 40, 'زجاج', 'زجاج اخضر', 60, '1٫5', 'GL', 'GL GREEN COAT'),
 ('+01.00', '-00.25', 40, 'زجاج', 'زجاج اخضر', 60, '1٫75', 'GL', 'GL GREEN COAT'),
 ('+02.00', '-00.50', 40, 'زجاج', 'زجاج اخضر', 60, '2', 'GL', 'GL GREEN COAT'),
-('+02.00', '-00.75', 40, 'زجاج', 'زجاج اخضر', 60, '2٫25', 'GL', 'GL GREEN COAT')
+('+02.00', '-00.75', 40, 'زجاج', 'زجاج اخضر', 60, '2٫25', 'GL', 'GL GREEN COAT');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+02.00', '-01.00', 40, 'زجاج', 'زجاج اخضر', 60, '2٫5', 'GL', 'GL GREEN COAT'),
 ('+02.00', '-01.25', 40, 'زجاج', 'زجاج اخضر', 60, '2٫75', 'GL', 'GL GREEN COAT'),
@@ -20038,7 +20038,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('-04.00', '-02.25', 41.5, 'زجاج', 'زجاج ابيض', 65, '-04.00-02.25', 'GL', 'GL W'),
 ('-04.00', '-02.50', 41.5, 'زجاج', 'زجاج ابيض', 65, '-04.00-02.50', 'GL', 'GL W'),
 ('-04.00', '-02.75', 41.5, 'زجاج', 'زجاج ابيض', 65, '-04.00-02.75', 'GL', 'GL W'),
-('-04.00', '-03.00', 41.5, 'زجاج', 'زجاج ابيض', 65, '-04.00-03.00', 'GL', 'GL W')
+('-04.00', '-03.00', 41.5, 'زجاج', 'زجاج ابيض', 65, '-04.00-03.00', 'GL', 'GL W');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('-04.00', '-03.25', 41.5, 'زجاج', 'زجاج ابيض', 65, '-04.00-03.25', 'GL', 'GL W'),
 ('-04.00', '-03.50', 41.5, 'زجاج', 'زجاج ابيض', 65, '-04.00-03.50', 'GL', 'GL W'),
@@ -20539,7 +20539,7 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+05.00', '-01.00', 34, 'زجاج', 'زجاج ابيض', 55, '5٫75', 'GL', 'GL W'),
 ('+06.00', '-01.25', 34, 'زجاج', 'زجاج ابيض', 55, '6', 'GL', 'GL W'),
 ('+06.00', '-01.50', 34, 'زجاج', 'زجاج ابيض', 55, '6٫25', 'GL', 'GL W'),
-('+06.00', '-01.75', 34, 'زجاج', 'زجاج ابيض', 55, '6٫5', 'GL', 'GL W')
+('+06.00', '-01.75', 34, 'زجاج', 'زجاج ابيض', 55, '6٫5', 'GL', 'GL W');
 INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES 
 ('+06.00', '-02.00', 34, 'زجاج', 'زجاج ابيض', 55, '6٫75', 'GL', 'GL W'),
 ('+05.00', '+00.00', 34, 'زجاج', 'زجاج ابيض', 55, '5', 'GL', 'GL W'),
@@ -20706,4 +20706,4 @@ INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_c
 ('+03.00', '-04.00', 41.5, 'زجاج', 'زجاج ابيض', 60, '-0٫75', 'GL', 'GL W'),
 ('+03.00', '-03.75', 41.5, 'زجاج', 'زجاج ابيض', 60, '-0٫25', 'GL', 'GL W'),
 ('+03.00', '-04.00', 41.5, 'زجاج', 'زجاج ابيض', 60, '-0٫5', 'GL', 'GL W'),
-('+03.00', '-04.00', 41.5, 'زجاج', 'زجاج ابيض', 60, '-0٫25', 'GL', 'GL W')
+('+03.00', '-04.00', 41.5, 'زجاج', 'زجاج ابيض', 60, '-0٫25', 'GL', 'GL W');

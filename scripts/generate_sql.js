@@ -68,7 +68,7 @@ fs.createReadStream(inputFile)
         .join(",\n");
 
       // Use the verified column names from previous steps
-      const sqlQuery = `INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES \n${values}\n`;
+      const sqlQuery = `INSERT INTO lenses (sph, cyl, price, main_category, sub_category, diameter, qr_code, MAINCATEGORYEN, SUBCATEGORYEN) VALUES \n${values};\n`;
 
       writeStream.write(sqlQuery);
       processedCount += batch.length;
@@ -85,3 +85,17 @@ fs.createReadStream(inputFile)
     console.error("Error reading CSV:", err);
   });
 // node scripts/generate_sql.js
+
+// table structure
+// CREATE TABLE `lenses` (
+//   `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,  -- Changed: Added Auto Increment & Primary Key
+//   `sph` decimal(5,2) DEFAULT NULL,
+//   `cyl` decimal(5,2) DEFAULT NULL,
+//   `price` decimal(10,2) DEFAULT NULL,
+//   `main_category` varchar(255) DEFAULT NULL,
+//   `sub_category` varchar(255) DEFAULT NULL,
+//   `diameter` decimal(5,2) DEFAULT NULL,
+//   `qr_code` varchar(255) DEFAULT NULL,
+//   `SUBCATEGORYEN` text NOT NULL,
+//   `MAINCATEGORYEN` text NOT NULL
+// ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

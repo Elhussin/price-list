@@ -10,6 +10,7 @@ interface InputFormProps {
     setFilters: React.Dispatch<React.SetStateAction<FilterState>>;
     mainCategories: string[];
     subCategories: string[];
+    subCategoriesByMain?: Record<string, string[]>;
     onOpenScanner: () => void;
     onSearch: () => void;
     t: typeof translations.en;
@@ -20,6 +21,7 @@ const InputForm: React.FC<InputFormProps> = ({
     setFilters,
     mainCategories,
     subCategories,
+    subCategoriesByMain,
     // onOpenScanner, // Reserved for future use
     onSearch,
     t
@@ -28,8 +30,20 @@ const InputForm: React.FC<InputFormProps> = ({
         setFilters(prev => ({ ...prev, [key]: value }));
     };
 
+    const handleMainCategoryChange = (val: string) => {
+        updateFilter('mainCategory', val);
+        updateFilter('subCategory', ''); // Reset subcategory
+    };
+
+    const filteredSubCategories = filters.mainCategory
+        ? (subCategoriesByMain?.[filters.mainCategory] || [])
+        : subCategories;
+
+    const isSearchDisabled = !filters.sph || !filters.cyl;
+
     return (
         <div className="bg-white dark:bg-slate-900 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-200 dark:border-slate-800 p-6 transition-colors">
+            {/* Same content ... */}
             <div className="flex items-center gap-2 mb-6 text-slate-400">
                 <FileSearch className="w-5 h-5" />
                 <h2 className="text-sm font-semibold uppercase tracking-wider">{t.searchFilters}</h2>
@@ -68,12 +82,12 @@ const InputForm: React.FC<InputFormProps> = ({
                                 label={t.mainCategory}
                                 value={filters.mainCategory}
                                 options={mainCategories}
-                                onChange={(val) => updateFilter('mainCategory', val)}
+                                onChange={handleMainCategoryChange}
                             />
                             <CategorySelect
                                 label={t.subCategory}
                                 value={filters.subCategory}
-                                options={subCategories}
+                                options={filteredSubCategories}
                                 onChange={(val) => updateFilter('subCategory', val)}
                             />
                         </div>
@@ -102,9 +116,13 @@ const InputForm: React.FC<InputFormProps> = ({
 
                     <button
                         onClick={onSearch}
-                        className="w-full py-4 bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-2xl font-bold transition-all shadow-lg shadow-blue-500/25 active:scale-95 flex items-center justify-center gap-2 group"
+                        disabled={isSearchDisabled}
+                        className={`w-full py-4 rounded-2xl font-bold transition-all flex items-center justify-center gap-2 group ${isSearchDisabled
+                                ? 'bg-slate-100 dark:bg-slate-800 text-slate-400 cursor-not-allowed border border-slate-200 dark:border-slate-700'
+                                : 'bg-linear-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white shadow-lg shadow-blue-500/25 active:scale-95'
+                            }`}
                     >
-                        <Search className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                        <Search className={`w-5 h-5 transition-transform ${!isSearchDisabled && 'group-hover:scale-110'}`} />
                         <span>{t.searchStock}</span>
                     </button>
                 </div>
