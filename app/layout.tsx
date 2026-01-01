@@ -15,6 +15,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Alyosser Optical Factory",
   description: "Price List of Alyosser Optical Factory",
+  icons: {
+    icon: '/logo.png',
+  },
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
