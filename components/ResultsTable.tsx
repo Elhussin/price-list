@@ -162,8 +162,8 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
                             </div>
 
                             <div className="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 flex items-end justify-between">
-                                <div className="flex items-center gap-2 px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-mono text-slate-600 dark:text-slate-300 whitespace-nowrap">
-                                    {lens.QRCODE} <span className="text-xs text-slate-400 flex items-center gap-1"><CircleSlash2 className="w-4 h-4" />{diameter}</span>
+                                <div dir="ltr" className="flex items-center  gap-2 px-2 py-1 rounded-md bg-slate-100 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-xs font-mono text-slate-600 dark:text-slate-300 whitespace-nowrap">
+                                    {String(lens.QRCODE)} <span className="text-xs text-slate-400 flex items-center gap-1"><CircleSlash2 className="w-4 h-4" />{diameter}</span>
                                 </div>
                                 <div className="flex flex-col items-end">
                                     {discount > 0 && (

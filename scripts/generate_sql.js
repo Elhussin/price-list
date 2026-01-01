@@ -30,17 +30,23 @@ fs.createReadStream(inputFile)
 
       const values = batch
         .map((row) => {
+          function formatPower(value) {
+            const sign = value >= 0 ? "+" : "-";
+            const absVal = Math.abs(value);
+            const [intPart, decPart] = absVal.toFixed(2).split(".");
+            const paddedInt = intPart.padStart(2, "0");
+            return `${sign}${paddedInt}.${decPart}`;
+          }
+
           // Ensure we handle missing keys gracefully and escape values
           const rawSph = row.SPH || row.sph;
           const rawCyl = row.CYL || row.cyl;
           const sphNum = parseFloat(rawSph);
           const cylNum = parseFloat(rawCyl);
-          const sph = escapeSql(
-            (sphNum >= 0 ? "+" : "-") + Math.abs(sphNum).toFixed(2)
-          );
-          const cyl = escapeSql(
-            (cylNum >= 0 ? "+" : "-") + Math.abs(cylNum).toFixed(2)
-          );
+          const sph = escapeSql(formatPower(sphNum));
+          const cyl = escapeSql(formatPower(cylNum));
+
+          // Other fields (unchanged formatting)
           const priceNum = parseFloat(row.PRICE || row.price || "0");
           const price = priceNum; // numeric, not quoted
           const mainCategory = escapeSql(row.MAINCATEGORY || row.main_category);

@@ -31,8 +31,8 @@ const PowerInputs: React.FC<PowerInputsProps> = ({ sph, cyl, onSphChange, onCylC
     };
 
     // Ensure we have a valid value for the select (default to +0.00 if empty)
-    const safeSph = sph || formatPower(0);
-    const safeCyl = cyl || formatPower(0);
+    const safeSph = sph || '';
+    const safeCyl = cyl || '';
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 direction:ltr">
@@ -45,10 +45,11 @@ const PowerInputs: React.FC<PowerInputsProps> = ({ sph, cyl, onSphChange, onCylC
                         value={safeSph}
                         onChange={(e) => onSphChange(e.target.value)}
                         onBlur={handleTransposition}
-                        className={`w-full appearance-none pl-4 pr-10 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none font-medium cursor-pointer ${getPowerColor(safeSph)}`}
+                        className={`w-full appearance-none pl-4 pr-10 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all outline-none font-medium cursor-pointer ${getPowerColor(safeSph)}`}
                     >
+                        <option value="" disabled hidden>Select SPH</option>
                         {sphList.map((opt) => (
-                            <option key={opt} value={opt} className={`bg-white dark:bg-slate-800 ${getPowerColor(opt)}`}>
+                            <option key={opt} value={opt} dir="ltr" className={`bg-white dark:bg-slate-800 ${getPowerColor(opt)}`}>
                                 {opt}
                             </option>
                         ))}
@@ -68,8 +69,9 @@ const PowerInputs: React.FC<PowerInputsProps> = ({ sph, cyl, onSphChange, onCylC
                         onBlur={handleTransposition}
                         className={`w-full appearance-none pl-4 pr-10 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all outline-none font-medium cursor-pointer ${getPowerColor(safeCyl)}`}
                     >
+                        <option value="" disabled hidden>Select CYL</option>
                         {cylList.map((opt) => (
-                            <option key={opt} value={opt} className={`bg-white dark:bg-slate-800 ${getPowerColor(opt)}`}>
+                            <option dir="ltr" key={opt} value={opt} className={`bg-white dark:bg-slate-800 ${getPowerColor(opt)}`}>
                                 {opt}
                             </option>
                         ))}

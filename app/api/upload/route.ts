@@ -45,13 +45,15 @@ export async function POST(request: Request) {
                 // Skip rows without valid identifier
                 if (!qr) continue;
 
-                // Format sph and cyl with explicit sign and two decimals
+                import { formatPower } from '../../utils/transpose';
+
+                // inside loop, replace formatting
                 const rawSph = row.SPH || row.sph || '0';
                 const rawCyl = row.CYL || row.cyl || '0';
                 const sphNum = parseFloat(rawSph);
                 const cylNum = parseFloat(rawCyl);
-                const sph = (sphNum >= 0 ? '+' : '-') + Math.abs(sphNum).toFixed(2);
-                const cyl = (cylNum >= 0 ? '+' : '-') + Math.abs(cylNum).toFixed(2);
+                const sph = formatPower(sphNum);
+                const cyl = formatPower(cylNum);
                 const price = parseFloat(row.PRICE || row.price || '0');
                 const main = row.MAINCATEGORY || row.mainCategory || '';
                 const sub = row.SUBCATEGORY || row.subCategory || '';
