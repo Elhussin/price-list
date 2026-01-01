@@ -1,7 +1,7 @@
 export const translations = {
     en: {
-        title: "Find the Perfect Lens",
-        subtitle: "Enter the prescription details or scan the lens package QR code to quickly filter available stock.",
+        title: "Price List",
+        subtitle: "Stock Price List",
         searchFilters: "Search Filters",
         prescriptionDetails: "Prescription Details",
         lensCategory: "Lens Category",
@@ -36,8 +36,8 @@ export const translations = {
         arabic: "العربية"
     },
     ar: {
-        title: " اعثر على العدسة المثالية",
-        subtitle: "أدخل تفاصيل الوصفة الطبية أو امسح رمز الاستجابة السريعة للعدسة لتصفية المخزون المتاح بسرعة.",
+        title: "قائمة الأسعار",
+        subtitle: "قائمة الأسعار الجاهزة",
         searchFilters: "تصفية البحث",
         prescriptionDetails: "تفاصيل الوصفة الطبية",
         lensCategory: "فئة العدسة",

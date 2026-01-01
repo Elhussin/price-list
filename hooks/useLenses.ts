@@ -3,9 +3,14 @@ import { Lens, FilterState } from '@/types';
 
 export const useLenses = () => {
     const [lenses, setLenses] = useState<Lens[]>([]);
-    const [categories, setCategories] = useState<{ mainCategories: string[], subCategories: string[] }>({
+    const [categories, setCategories] = useState<{ 
+        mainCategories: string[], 
+        subCategories: string[],
+        subCategoriesByMain: Record<string, string[]> 
+    }>({
         mainCategories: [],
-        subCategories: []
+        subCategories: [],
+        subCategoriesByMain: {}
     });
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
@@ -16,7 +21,11 @@ export const useLenses = () => {
             const res = await fetch(`/api/categories`);
             if (!res.ok) throw new Error('Failed to fetch categories');
             const data = await res.json();
-            setCategories(data);
+            setCategories({
+                mainCategories: data.mainCategories,
+                subCategories: data.allSubCategories || [],
+                subCategoriesByMain: data.subCategoriesByMain || {}
+            });
         } catch (err: any) {
             console.error(err);
             // Fallback or ignore if DB empty
@@ -29,8 +38,14 @@ export const useLenses = () => {
         setError(null);
         try {
             const params = new URLSearchParams();
-            if (filters.sph) params.append('sph', filters.sph);
-            if (filters.cyl) params.append('cyl', filters.cyl);
+            if(filters.sph !== ''){
+                if(isNaN(Number(filters.sph))){  setError('Please enter a valid SPH value'); return;}
+            }
+            if(filters.cyl !== ''){
+                if(isNaN(Number(filters.cyl))){  setError('Please enter a valid CYL value'); return;}
+            }
+            if (filters.sph !== '') params.append('sph', filters.sph);
+            if (filters.cyl !== '') params.append('cyl', filters.cyl);
             if (filters.mainCategory) params.append('mainCategory', filters.mainCategory);
             if (filters.subCategory) params.append('subCategory', filters.subCategory);
             if (filters.search) params.append('search', filters.search);

@@ -14,7 +14,7 @@ import { translations, Language } from '@/lib/translations';
 
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [language, setLanguage] = useState<Language>('en');
   const [isScannerOpen, setIsScannerOpen] = useState(false);
   const { lenses, categories, loading, error, fetchCategories, searchLenses, uploadCSV } = useLenses();
@@ -62,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'dark' : ''} bg-slate-50 dark:bg-slate-950`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
+    <div className={`min-h-screen ${darkMode ? 'dark' : ''} bg-slate-50 dark:bg-emerald-900`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
       <Header
         darkMode={darkMode}
         toggleDarkMode={() => setDarkMode(!darkMode)}
@@ -96,6 +96,7 @@ export default function Home() {
           setFilters={setFilters}
           mainCategories={categories.mainCategories}
           subCategories={categories.subCategories}
+          subCategoriesByMain={categories.subCategoriesByMain}
           onOpenScanner={() => setIsScannerOpen(true)}
           onSearch={handleSearch}
           t={t}

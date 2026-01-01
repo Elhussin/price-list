@@ -46,8 +46,6 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
         return sort.direction === 'asc' ? <ChevronUp className="w-4 h-4 text-blue-500" /> : <ChevronDown className="w-4 h-4 text-blue-500" />;
     };
 
-
-    console.log(sortedLenses);
     if (lenses.length === 0) {
         return (
             <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-12 text-center">
@@ -65,8 +63,8 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
             <div className="flex flex-wrap items-center gap-3 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
                 <span className="text-sm font-medium text-slate-500 dark:text-slate-400">{t.sortBy}</span>
                 <div className="flex flex-wrap gap-2">
-                    {[t.category, t.qrCode, t.price, t.sphere, t.cylinder, t.diameter].map((header, idx) => {
-                        const keys: (keyof Lens)[] = ['MAINCATEGORY', 'QRCODE', 'PRICE', 'SPH', 'CYL', 'DIAMETER'];
+                    {[t.category, t.price, t.diameter].map((header, idx) => {
+                        const keys: (keyof Lens)[] = ['MAINCATEGORY', 'PRICE', 'DIAMETER'];
                         const key = keys[idx];
                         const isActive = sort.key === key;
                         return (
