@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import pool from '@/lib/db';
 import csv from 'csv-parser';
 import { Readable } from 'stream';
-
+import { formatPower } from '@/utils/transpose';
 export async function POST(request: Request) {
     let connection;
     try {
@@ -45,7 +45,7 @@ export async function POST(request: Request) {
                 // Skip rows without valid identifier
                 if (!qr) continue;
 
-                import { formatPower } from '../../utils/transpose';
+                
 
                 // inside loop, replace formatting
                 const rawSph = row.SPH || row.sph || '0';
