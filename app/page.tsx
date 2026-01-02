@@ -62,7 +62,7 @@ export default function Home() {
   };
 
   return (
-    <div className={`min-h-screen ${darkMode ? 'dark' : ''} bg-slate-50 dark:bg-slate-950`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
+    <div className={` min-h-screen ${darkMode ? 'dark' : ''} bg-slate-50 dark:bg-slate-950`} dir={language === 'ar' ? 'rtl' : 'ltr'}>
       <Header
         darkMode={darkMode}
         toggleDarkMode={() => setDarkMode(!darkMode)}
@@ -70,13 +70,13 @@ export default function Home() {
         setLanguage={setLanguage}
       />
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+      <main className="bg-emerald-100 dark:bg-slate-950 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 space-y-2">
         <section className="space-y-2 flex justify-between items-end">
           <div>
-            <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
+            {/* <h2 className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
               {t.title}
-            </h2>
-            <p className="text-slate-500 dark:text-slate-400 max-w-2xl">
+            </h2> */}
+            <p className="text-slate-800 dark:text-slate-400 max-w-2xl">
               {t.subtitle}
             </p>
           </div>
