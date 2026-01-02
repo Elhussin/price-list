@@ -52,21 +52,21 @@ const CustomPowerSelect: React.FC<CustomPowerSelectProps> = ({ label, value, opt
 
     return (
         <div className="relative" ref={containerRef}>
-            <label className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1">
+            <label className="block text-sm font-medium  text-slate-700 dark:text-slate-300 mb-1">
                 {label}
             </label>
             <button
                 dir="ltr"
                 type="button"
                 onClick={() => setIsOpen(!isOpen)}
-                className={`w-full flex items-center justify-between px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all outline-none font-medium ${getPowerColor(value)}`}
+                className={`w-full flex items-center justify-between px-4 py-2 rounded-xl border border-emerald-800 dark:border-slate-700 bg-emerald-100 dark:bg-slate-800 shadow-sm focus:ring-2 focus:emerald-900 focus:border-transparent transition-all outline-none font-medium ${getPowerColor(value)}`}
             >
                 <span>{value || placeholder}</span>
                 {isOpen ? <ChevronUp className="w-4 h-4 text-slate-700" /> : <ChevronDown className="w-4 h-4 text-slate-600" />}
             </button>
 
             {isOpen && (
-                <div className="absolute z-50 w-full mt-1 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl shadow-xl max-h-60 overflow-y-auto overflow-x-hidden">
+                <div className="absolute z-50 w-full mt-1 bg-emerald-100 dark:bg-slate-800 border border-emerald-800 dark:border-slate-700 rounded-xl shadow-xl max-h-60 overflow-y-auto overflow-x-hidden">
                     {/* Added 'grid-cols-3' for the requested grid layout */}
                     <div className="grid grid-cols-3 gap-1 p-2">
                         {/* Option to clear selection */}

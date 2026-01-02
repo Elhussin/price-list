@@ -23,7 +23,8 @@ export const translations = {
         sortBy: "Sort by:",
         results: "results",
         footerQuote: "\"Together we see better\"",
-        rightsReserved: "OptiLens Pro. All rights reserved.",
+        rightsReserved: "Alyosser Optical. All rights reserved.",
+        devBy: "Developed by",
         availableLenses: "Available Lenses",
         discountApplied: "Discount Applied",
         searchPlaceholder: "Search by category, feature, or serial...",
@@ -69,7 +70,8 @@ export const translations = {
         darkMode: "تغيير الوضع الليلي",
         language: "اللغة",
         english: "English",
-        arabic: "العربية"
+        arabic: "العربية",
+        devBy: "Developed by",
     }
 };
 

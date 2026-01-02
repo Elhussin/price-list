@@ -16,11 +16,11 @@ const CategorySelect: React.FC<CategorySelectProps> = ({ label, value, options, 
             <select
                 value={value}
                 onChange={(e) => onChange(e.target.value)}
-                className="w-full px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all outline-none appearance-none"
+                className="w-full px-4 py-2 rounded-xl border border-emerald-800 dark:border-slate-700 bg-emerald-100 dark:bg-slate-800 shadow-sm focus:ring-2 focus:emerald-900 focus:border-transparent transition-all outline-none appearance-none"
             >
-                <option value="" className='text-slate-900 dark:text-slate-100' >All Categories</option>
+                <option value="" className='text-slate-900 bg-emerald-100 dark:text-slate-100' >All Categories</option>
                 {options.map((opt) => (
-                    <option key={opt} value={opt} dir="ltr" className='text-slate-900 dark:text-slate-100'>
+                    <option key={opt} value={opt} dir="ltr" className='text-slate-900 bg-emerald-100 dark:text-slate-100'>
                         {opt}
                     </option>
                 ))}
