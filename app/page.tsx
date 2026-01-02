@@ -139,6 +139,8 @@ export default function Home() {
           <p className="text-xs text-white dark:text-slate-600">
             &copy; {new Date().getFullYear()} {t.rightsReserved}
           </p>
+          
+           
         </div>
       </footer>
     </div>

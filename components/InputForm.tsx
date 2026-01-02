@@ -52,7 +52,7 @@ const InputForm: React.FC<InputFormProps> = ({
             <div className="grid grid-cols-1 xl:grid-cols-8 gap-6">
                 {/* Prescription Section */}
                 <div className="xl:col-span-8 flex flex-col">
-                    <div className="h-full bg-emerald-300 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 relative group transition-all hover:border-blue-200 dark:hover:border-blue-900/50">
+                    <div className="h-full bg-emerald-200 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 relative group transition-all hover:border-blue-200 dark:hover:border-blue-900/50">
                         <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
                             <Glasses className="w-12 h-12 text-blue-600" />
                         </div>
@@ -70,7 +70,7 @@ const InputForm: React.FC<InputFormProps> = ({
 
                 {/* Category Section */}
                 <div className="xl:col-span-5 flex flex-col">
-                    <div className="h-full bg-emerald-300 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 relative group transition-all hover:border-purple-200 dark:hover:border-purple-900/50">
+                    <div className="h-full bg-emerald-200 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 relative group transition-all hover:border-purple-200 dark:hover:border-purple-900/50">
                         <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
                             <Layers className="w-12 h-12 text-purple-600" />
                         </div>
@@ -96,7 +96,7 @@ const InputForm: React.FC<InputFormProps> = ({
 
                 {/* Actions Section */}
                 <div className="xl:col-span-3 flex flex-col gap-4">
-                    <div className="bg-emerald-300 dark:bg-slate-800/50 rounded-2xl p-5 border border-slate-100 dark:border-slate-800 flex-1">
+                    <div className="bg-emerald-200 dark:bg-slate-800/50 rounded-2xl p-5 border border-emerald-800 dark:border-slate-800 flex-1">
                         <label className="block text-xs font-bold text-slate-600 uppercase tracking-wider mb-2">
                             {t.discount}
                         </label>
@@ -109,7 +109,7 @@ const InputForm: React.FC<InputFormProps> = ({
                                 value={filters.discount}
                                 onFocus={(e) => e.target.select()}
                                 onChange={(e) => updateFilter('discount', parseInt(e.target.value))}
-                                className="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 text-slate-900 dark:text-white outline-none focus:ring-2 focus:ring-blue-500 transition-all font-semibold"
+                                className="w-full pl-10 pr-4 py-3  rounded-xl border border-emerald-800 dark:border-slate-700 bg-emerald-100 dark:bg-slate-900 text-slate-900 dark:text-white outline-none focus:ring-2 focus:emerald-900 transition-all font-semibold"
                                 placeholder="0"
                             />
                         </div>
@@ -119,7 +119,7 @@ const InputForm: React.FC<InputFormProps> = ({
                         onClick={onSearch}
                         disabled={isSearchDisabled}
                         className={`w-full  py-4 rounded-2xl font-bold transition-all flex items-center justify-center gap-2 group ${isSearchDisabled
-                            ? 'bg-slate-800 dark:bg-slate-800 text-white cursor-not-allowed border border-slate-200 dark:border-slate-700'
+                            ? 'bg-slate-400 dark:bg-slate-800 text-white cursor-not-allowed border border-emerald-800 dark:border-slate-700'
                             : 'bg-emerald-600 hover:bg-emerald-700 text-white shadow-lg shadow-blue-500/25 active:scale-95'
                             }`}
                     >
