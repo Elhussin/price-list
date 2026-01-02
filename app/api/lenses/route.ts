@@ -9,7 +9,7 @@ export async function GET(request: Request) {
         const mainCategory = searchParams.get('mainCategory');
         const subCategory = searchParams.get('subCategory');
         const search = searchParams.get('search');
-
+        console.log(sph, cyl, mainCategory, subCategory, search);
         let query = 'SELECT * FROM lenses WHERE 1=1';
         const params: any[] = [];
 
@@ -35,7 +35,10 @@ export async function GET(request: Request) {
             params.push(searchParam, searchParam, searchParam);
         }
 
+        console.log(query, params);
+
         const [rows] = await pool.execute(query, params);
+    
 
         // Map to frontend interface
         const formattedRows = (rows as any[]).map(row => ({
