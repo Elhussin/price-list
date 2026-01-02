@@ -30,21 +30,15 @@ fs.createReadStream(inputFile)
 
       const values = batch
         .map((row) => {
-          function formatPower(value) {
-            const sign = value >= 0 ? "+" : "-";
-            const absVal = Math.abs(value);
-            const [intPart, decPart] = absVal.toFixed(2).split(".");
-            const paddedInt = intPart.padStart(2, "0");
-            return `${sign}${paddedInt}.${decPart}`;
-          }
-
           // Ensure we handle missing keys gracefully and escape values
           const rawSph = row.SPH || row.sph;
           const rawCyl = row.CYL || row.cyl;
           const sphNum = parseFloat(rawSph);
           const cylNum = parseFloat(rawCyl);
-          const sph = escapeSql(formatPower(sphNum));
-          const cyl = escapeSql(formatPower(cylNum));
+          
+          // Use numeric values directly for SQL INSERT
+          const sph = isNaN(sphNum) ? "NULL" : sphNum; 
+          const cyl = isNaN(cylNum) ? "NULL" : cylNum;
 
           // Other fields (unchanged formatting)
           const priceNum = parseFloat(row.PRICE || row.price || "0");
