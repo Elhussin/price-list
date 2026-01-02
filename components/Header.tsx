@@ -30,6 +30,9 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, language, set
 
                 </div>
                 <div className="flex items-center gap-2">
+                    <Link href="/lap-lens" className="text-white">
+                        <span className="text-white">اسعار التصنيع</span>
+                    </Link>
                     <button
                         onClick={toggleDarkMode}
                         className="p-2 rounded-full hover:text-slate-800 hover:bg-slate-200 transition-colors text-yellow-500"

@@ -52,7 +52,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
 
     if (lenses.length === 0) {
         return (
-            <div className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-12 text-center">
+            <div className="bg-emerald-200 dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-12 text-center">
                 <div className="bg-slate-100 dark:bg-slate-800 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <ShoppingBag className="w-8 h-8 text-slate-400" />
                 </div>
@@ -64,8 +64,8 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
 
     return (
         <div className="space-y-6">
-            <div className="flex flex-wrap items-center gap-3 p-4 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-                <span className="text-sm font-medium text-slate-500 dark:text-slate-400">{t.sortBy}</span>
+            <div className="flex flex-wrap items-center gap-3 p-4 bg-emerald-800 dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                <span className="text-sm font-medium text-white dark:text-slate-400">{t.sortBy}</span>
                 <div className="flex flex-wrap gap-2">
                     {[t.category, t.subCategory, t.price, t.diameter].map((header, idx) => {
                         const keys: (keyof Lens)[] = ['MAINCATEGORY', 'SUBCATEGORY', 'PRICE', 'DIAMETER'];
@@ -89,7 +89,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
                         );
                     })}
                 </div>
-                <div className="ml-auto text-xs text-slate-500 dark:text-slate-400">
+                <div className="ml-auto text-xs text-white dark:text-slate-400">
                     {t.showingResults.replace('{count}', lenses.length.toString())}
                 </div>
             </div>
@@ -104,7 +104,7 @@ const ResultsTable: React.FC<ResultsTableProps> = ({ lenses, discount, t }) => {
                     return (
                         <div
                             key={`${lens.QRCODE}-${i}`}
-                            className="bg-white dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-5 hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
+                            className="bg-emerald-200 dark:bg-slate-900 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-800 p-5 hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
                         >
                             <div className="space-y-4 ">
                                 {/*  ←‑‑ أضف dir="ltr" أو style={{ direction: 'ltr' }} هنا */}

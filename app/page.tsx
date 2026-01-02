@@ -14,7 +14,7 @@ import { translations, Language } from '@/lib/translations';
 
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [language, setLanguage] = useState<Language>('en');
   const [isScannerOpen, setIsScannerOpen] = useState(false);
   const { lenses, categories, loading, error, fetchCategories, searchLenses, uploadCSV } = useLenses();
@@ -131,12 +131,12 @@ export default function Home() {
         />
       )}
 
-      <footer className="py-12 px-4 border-t border-slate-200 dark:border-slate-800 mt-auto">
+      <footer className="py-12 px-4 border-t bg-emerald-900 border-slate-200 dark:border-slate-800 mt-auto">
         <div className="max-w-7xl mx-auto text-center space-y-4">
-          <p className="text-sm text-slate-500 dark:text-slate-400 italic">
+          <p className="text-sm text-white dark:text-slate-400 italic">
             {t.footerQuote}
           </p>
-          <p className="text-xs text-slate-400 dark:text-slate-600">
+          <p className="text-xs text-white dark:text-slate-600">
             &copy; {new Date().getFullYear()} {t.rightsReserved}
           </p>
         </div>

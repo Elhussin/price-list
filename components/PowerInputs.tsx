@@ -62,7 +62,7 @@ const CustomPowerSelect: React.FC<CustomPowerSelectProps> = ({ label, value, opt
                 className={`w-full flex items-center justify-between px-4 py-2 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all outline-none font-medium ${getPowerColor(value)}`}
             >
                 <span>{value || placeholder}</span>
-                {isOpen ? <ChevronUp className="w-4 h-4 text-slate-400" /> : <ChevronDown className="w-4 h-4 text-slate-400" />}
+                {isOpen ? <ChevronUp className="w-4 h-4 text-slate-700" /> : <ChevronDown className="w-4 h-4 text-slate-600" />}
             </button>
 
             {isOpen && (
